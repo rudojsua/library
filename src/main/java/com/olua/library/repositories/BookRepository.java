@@ -12,7 +12,7 @@ public interface BookRepository extends CrudRepository <Book, Long> {
 
     @Query("SELECT * FROM book WHERE id= :id")
     Book findBookById(long id);
-    @Query("SELECT*FROM book WHERE title= :title")
+    @Query("SELECT * FROM book WHERE title= :title")
     List<Book> findBooksByTitle(String title);
 
 }
